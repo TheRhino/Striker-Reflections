@@ -769,6 +769,7 @@ Response:  The class would be the actual Mobile Makers Academy class and I would
 
 \i0 \cf0 \expnd0\expndtw0\kerning0
 \
+@property\
 \
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
@@ -792,11 +793,10 @@ What is the pointer's role in instantiating an object from a class? How is a poi
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \i \cf0 \expnd0\expndtw0\kerning0
-Response:  In Objective-C all objects are accessed using pointers.  You will always need a pointer to reference an object.  A pointer is used to tell Objective-C to define an object.  A pointer explains what the identity is not what the value is.  A pointer retrieves data and a primitive stores data.\
+Response:  In Objective-C all objects are accessed using pointers.  You will always need a pointer to reference an object.  A pointer is used to tell Objective-C to define an object.  A pointer explains what the identity is not what the value is.  A pointer understands where the variables are located and a primitive holds values.\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \i0 \cf0 \expnd0\expndtw0\kerning0
-\
 \
 \
 \
@@ -1108,7 +1108,7 @@ What are the two different sections used to create a class? What do they hold an
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \i \cf0 \expnd0\expndtw0\kerning0
-Response:  The two sections are interface and implementation.  Interface is placed in the .h file and this is the headerclass which explains what every object in this class can do.  It holds the data and behavior this class promises to provide and it explains what properties and methods it has.  Implementation is placed in the .m file and it holds the actual code that provides the functionality property declaration with corresponding synthesized statements. \
+Response:  The two sections are interface and implementation.  Interface holds the public data and is placed in the .h file and this is the headerclass which explains what every object in this class can do.  It holds the data and behavior this class promises to provide and it explains what properties and methods it has.  Implementation holds the hidden data and is placed in the .m file and it holds the actual code that provides the functionality property declaration with corresponding synthesized statements. \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \i0 \cf0 \expnd0\expndtw0\kerning0
@@ -1220,7 +1220,7 @@ Why can we have a dealloc method in a class when using ARC, but we can't call de
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \i \cf0 \expnd0\expndtw0\kerning0
-Response:  In a complex application if you object is holding on to some kind of resource you would use dealloc to make sure the connection is property closed before the object is destroyed.  This is required with connections to data bases or holding open file connections on a local machine.  It is wrote to cleanup code that needs to happen.  We cannot call dealloc manually when using ARC because it is automatically called at the end of the objects lifetime.\
+Response:  In a complex application if your object is holding on to some kind of resource you would use dealloc to make sure the connection is property closed before the object is destroyed.  This is required with connections to data bases or holding open file connections on a local machine.  It is wrote to cleanup code that needs to happen.  We cannot call dealloc manually when using ARC because it is automatically called at the end of the objects lifetime.\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \i0 \cf0 \expnd0\expndtw0\kerning0
